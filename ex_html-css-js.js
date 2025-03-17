@@ -1,4 +1,4 @@
-let formulario=document.getElementById(formulario);
+let formulario=document.getElementById("formulario");
 
 let nombre=document.getElementById.trim(("nombre"));
 let direccion=document.getElementById.trim(("direccion"));
@@ -6,19 +6,29 @@ let telefono=document.getElementById.trim(("telefono"));
 let email=document.getElementById.trim(("email"));
 
 formulario.onsubmit(){
-    if(nombre.value===""){
+
+    if(nombre.value.trim().===" "){
         alert("Revisa el formulario: algunos campos son incorrectos o están incompletos. (Nombre)");
-    }
-    if(direccion.value.length<15){
+        return;
+    };
+
+    if(direccion.value.trim().length<15){
         alert("Revisa el formulario: algunos campos son incorrectos o están incompletos. (Dirección)");
-    }
+        return;
+    };
+
     if(isNaN(telefono)){
         alert("Revisa el formulario: algunos campos son incorrectos o están incompletos. (Teléfono)");
-    }
-    if(telefono.value.length<9){
+        return;
+    };
+
+    if(telefono.value.trim().length<9){
         alert("Revisa el formulario: algunos campos son incorrectos o están incompletos. (Teléfono)");
-    }
-    if(!contains.email("@")){
+        return;
+    };
+
+    if(!email.contains("@")){
         alert("Revisa el formulario: algunos campos son incorrectos o están incompletos. (Email)");
-    }
-};
+        return;
+    };
+}
