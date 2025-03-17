@@ -37,9 +37,9 @@
         <h2>Tipo de hamburguesa:</h2><br>
 
         <select id="op-hamburguesa" required>
-            <option>Clásica</option>
-            <option>BBQ</option>
-            <option>Especial</option>
+            <option id="clasica" value="5">Clásica</option>
+            <option id="bbq" value="7">BBQ</option>
+            <option id="especial" value="8">Especial</option>
         </select>
         
         <h2>Ingredientes extras:</h2>
@@ -52,11 +52,11 @@
         <h2>Cantidad:</h2><br>
 
         <select id="cantidad" required>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
+            <option id="1" value="1">1</option>
+            <option id="2" value="2">2</option>
+            <option id="3" value="3">3</option>
+            <option id="4" value="4">4</option>
+            <option id="5" value="5">5</option>
         </select>
 
         <h2>Método de pago:</h2>
@@ -68,13 +68,16 @@
         </select>
 
         <h2>Instrucciones adicionales:</h2>
-        <textarea id="instrucciones" placeholder="Pon aquí tus instrucciones adicionales." maxlength="100"></textarea>
-        <p id="cont"></p><br>
+        <textarea id="caracteres" placeholder="Pon aquí tus instrucciones adicionales." maxlength="100"></textarea>
+        <p id="cont">0</p><br>
 
-        <button type="submit">Enviar pedido</button>
-
-        <footer>Rafael Alcaide Carraveo</footer>
+        <p id="total"></p>
+        <button type="submit" id="envio">Enviar pedido</button>
+        <button id="cambiofondo">Cambiar fondo</button>
+        
     </form>
+
+    <footer>Rafael Alcaide Carraveo</footer>
     <script src="ex_html-css-js.js"></script>
 
 </body>
