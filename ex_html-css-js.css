@@ -19,9 +19,34 @@ h2 {
 }
 
 img{
-   align-items: center;
+   width: 640px;
    border-radius: 5px;
    margin-bottom: 15px;
 }
+
 form {
+   background-color: #ffffff;
+   border-radius: 5px;
+   padding: 20px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+
+input, select, textarea {
+   padding: 8px;
+   margin-bottom: 15px;
+   border-radius: 5px;
+   border: 1px solid #eaeaea;
+}
+
+button {
+   background-color: #a4161a;
+   color: white;
+   text-align: center;
+   padding: 10px;
+   border-radius: 5px;
+}
+
+textarea[placeholder] {
+   color: #5f5e5e;
 }
