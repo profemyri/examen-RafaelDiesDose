@@ -1,34 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <title>Formulario_Hamburguesa</title>
     <link rel="stylesheet" href="ex_html-css-js.css">
+
 </head>
 <body>
+
     <h1>Realiza tu pedido</h1>
-    <img src="cheese-burguer.png" alt="A la rica hamburguesa">
+    <img src="cheese-burger.png">
+    
     <form>
-        
-        <p>Datos del cliente:</p><br>
-        <input type="text" id="nombre" required>Nombre
-        <label for="direccion">Dirección</label>
-        <input type="text" id="apellidos" required>apellidos
-        <input type="text" id="direccion" required>Dirección
-        <input type="text" id="telefono" required>Teléfono
-        <input type="email" id="email" required>Email
-        <input type="datetime" id="hora" required>Hora
 
-        <h3>Tipo de hamburguesa</h3><br>
+        <p>Datos del cliente: (OBLIGATORIO)</p><br>
 
-        <select>
-            <option type="radio">Clásica
-            <option type="radio">BBQ
-            <option type="radio">Especial
+        <label for="nombre">Nombre *</label><br>
+        <input type="text" id="nombre" required><br>
+
+        <label for="apellidos">Apellidos *</label><br>
+        <input type="text" id="apellidos" required><br>
+
+        <label for="direccion">Dirección *</label><br>
+        <input type="text" id="direccion" required><br>
+
+        <label for="telefono">Teléfono *</label><br>
+        <input type="text" id="telefono" required><br>
+
+        <label for="email">Email *</label><br>
+        <input type="email" id="email" required><br>
+
+        <label for="hora">Hora *</label><br>
+        <input type="datetime" id="hora" required><br>
+
+        <h3>Tipo de hamburguesa:</h3><br>
+
+        <select id="op-hamburguesa" required>
+            <option>Clásica</option>
+            <option>BBQ</option>
+            <option>Especial</option>
         </select>
         
+        <h3>Ingredientes extras:</h3>
+
+        <input type="checkbox" class="extras" value="1">Bacon
+        <input type="checkbox" class="extras" value="1">Queso<br>
+        <input type="checkbox" class="extras" value="1">Huevo
+        <input type="checkbox" class="extras" value="1">Patatas<br>
+
         <h3>Cantidad:</h3><br>
 
+        <select id="cantidad" required>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+
+        <h3>Método de pago:</h3>
+
+        <select id="pago" required>
+            <option>Efectivo</option>
+            <option>Tarjeta</option>
+            <option>Paypal</option>
+        </select>
+
+        <h3>Instrucciones adicionales:</h3>
+        <input id="instrucciones" placeholder="Pon aquí tus instrucciones adicionales." maxlength="100">
+        <p id="cont"></p><br>
+
+        <button type="submit">Enviar pedido</button>
+
+        <footer>Rafael Alcaide Carraveo</footer>
     </form>
     <script src="ex_html-css-js.js"></script>
 
