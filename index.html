@@ -2,12 +2,34 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-   ..........
+    <title>Formulario_Hamburguesa</title>
     <link rel="stylesheet" href="ex_html-css-js.css">
 </head>
 <body>
-   ..........
+    <h1>Realiza tu pedido</h1>
+    <img src="cheese-burguer.png" alt="A la rica hamburguesa">
+    <form>
+        
+        <p>Datos del cliente:</p><br>
+        <input type="text" id="nombre" required>Nombre
+        <label for="direccion">Dirección</label>
+        <input type="text" id="apellidos" required>apellidos
+        <input type="text" id="direccion" required>Dirección
+        <input type="text" id="telefono" required>Teléfono
+        <input type="email" id="email" required>Email
+        <input type="datetime" id="hora" required>Hora
 
+        <h3>Tipo de hamburguesa</h3><br>
+
+        <select>
+            <option type="radio">Clásica
+            <option type="radio">BBQ
+            <option type="radio">Especial
+        </select>
+        
+        <h3>Cantidad:</h3><br>
+
+    </form>
     <script src="ex_html-css-js.js"></script>
 
 </body>
